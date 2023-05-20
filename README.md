@@ -1,6 +1,10 @@
 # NextLevelWeek Spacetime
 
 <div align="center">
+  <img alt="Happy" src="https://github.com/lmaoclost/NLW-Spacetime/blob/main/web/src/assets/nlw-spacetime-logo.svg" width="280"/>
+</div>
+
+<div align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-191A1E">
 
   <a href="https://rocketseat.com.br">
@@ -12,7 +16,7 @@
   </a>
 </div>
 
-Project for a [Course](https://github.com/rocketseat-education/nlw-12-spacetime-ignite) that has the purpose to code a project named Spacetime using Fastify, ReactJS, Next and React Native.
+Project for a [Course](https://github.com/rocketseat-education/nlw-12-spacetime-ignite) that has the purpose to code a project named Spacetime using Fastify, ReactJS, NextJS and React Native.
 
 ## Getting Started
 
@@ -45,11 +49,11 @@ $ npx prisma migrate
 $ npm run dev
 ```
 
-The Backend will be running in the http://localhost:3333. To test the routes, i'm leaving this [Insomnia file](https://github.com/lmaoclost/NextLevelWeek-3/blob/main/backend/Insomnia_2020-10-16). Make sure that you change the baseURL inside [images_view.ts](https://github.com/lmaoclost/NextLevelWeek-3/blob/main/backend/src/views/images_view.ts) so the images can be displayed correctly in mobile.
+The Backend will be running in the http://localhost:3333. To test the routes, i'm leaving this [Insomnia file](https://github.com/lmaoclost/NextLevelWeek-3/blob/main/backend/Insomnia_2020-10-16).
 
 ## Mobile
 
-I'm using Expo, so make sure that you have it. Go to [Api.ts](https://github.com/lmaoclost/NextLevelWeek-3/blob/master/mobile/src/services/api.ts) and change the baseURL to the server IP. If you're running the backend on localhost, the IP has the one in the expo page.
+I'm using Expo, so make sure that you have it. Go to [Api.ts](https://github.com/lmaoclost/NLW-Spacetime/blob/main/mobile/src/lib/api.ts) and change the baseURL to the server IP. If you're running the backend on localhost, the IP has the one in the expo page.
 
 ```
 $ cd /mobile
@@ -62,10 +66,10 @@ Go to the expo page and connect.
 ## Built With
 
 - [Typescript](https://devdocs.io/typescript/) - Main Language
-- [Node.js](https://nodejs.org/en/) - Backend framework
-- [React.js](https://reactjs.org/) - JS framework for WEB
+- [Fastify](https://www.fastify.io/) - Web framework for Node
+- [Nextjs](https://nextjs.org/) - JS framework for WEB
 - [React Native](https://facebook.github.io/react-native/) - JS framework for APPs
-- [TypeORM](https://typeorm.io/) - Typescript ORM
+- [Prisma](https://www.prisma.io/) - Typescript ORM
 - [SQLite](https://www.sqlite.org/index.html) - Database
 - [Expo](https://expo.io/) - Used to improve the app development
 
