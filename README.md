@@ -1,7 +1,7 @@
 # NextLevelWeek Spacetime
 
 <div align="center">
-  <img alt="Happy" src="https://github.com/lmaoclost/NLW-Spacetime/blob/main/web/src/assets/nlw-spacetime-logo.svg" width="280"/>
+  <img alt="Spacetime" src="https://github.com/lmaoclost/NLW-Spacetime/blob/main/web/src/assets/nlw-spacetime-logo.svg" width="280"/>
 </div>
 
 <div align="center">
@@ -16,7 +16,7 @@
   </a>
 </div>
 
-Project for a [Course](https://github.com/rocketseat-education/nlw-12-spacetime-ignite) that has the purpose to code a project named Spacetime using Fastify, ReactJS, NextJS and React Native.
+Project for a [Course](https://github.com/rocketseat-education/nlw-12-spacetime-ignite) that has the purpose to code a project named Spacetime using Fastify, ReactJS, NextJS, Github OAuth and React Native.
 
 ## Getting Started
 
@@ -24,7 +24,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Node, npm or yarn and a text editor. I'm using VSCode.
+Node, npm or yarn, two OAuth credentials from Github, one for web and one for mobile and a text editor. I'm using VSCode.
+
+## Github Credentials
+
+Create a .env file in the web and create a variable named NEXT_PUBLIC_GITHUB_CLIENT_ID, use one of the OAuth Client ID credentials from Github there. Do the same for server, but the variable names will be GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET . Finally, use the credentials in those and you're good to go. Remember to switch the values when you're testing mobile or web.
 
 ## FrontEnd
 
@@ -36,7 +40,7 @@ $ npm install
 $ npm run dev
 ```
 
-Go to http://localhost:3000 and the project is up and running! To use the backend, make sure that it is running.
+Go to http://localhost:3000 and the project is up and running! To use the backend, make sure that it is running. Go to [Api.ts](https://github.com/lmaoclost/NLW-Spacetime/blob/main/web/src/lib/api.ts) and change the baseURL to the server IP.
 
 ## BackEnd
 
@@ -49,7 +53,7 @@ $ npx prisma migrate
 $ npm run dev
 ```
 
-The Backend will be running in the http://localhost:3333. To test the routes, i'm leaving this [Insomnia file](https://github.com/lmaoclost/NextLevelWeek-3/blob/main/backend/Insomnia_2020-10-16).
+The Backend will be running in the http://localhost:3333. To test the routes, i'm leaving this [Insomnia file](https://github.com/lmaoclost/NLW-Spacetime/blob/main/server/Insomnia_2023-05-21).
 
 ## Mobile
 
